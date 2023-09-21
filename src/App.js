@@ -1,10 +1,12 @@
 import React from "react";
+import Intro from './components/Intro'
 import About from './components/About';
 
 export default function App() {
   return (
-    <main class="text-gray-400 bg-gray-900 body-font"> 
-    <About/>
+    <main class="text-gray-400 bg-gray-800"> 
+      <Intro/>
+      <About/>
     </main>
   );
 }
