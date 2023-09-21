@@ -4,7 +4,7 @@ import About from './components/About';
 
 export default function App() {
   return (
-    <main class="text-gray-400 bg-gray-800"> 
+    <main class="text-gray-50 bg-gray-800"> 
       <Intro/>
       <About/>
     </main>
