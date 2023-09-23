@@ -35,3 +35,21 @@ animation: fadeInRight 1s ease-in-out;
 .fadeInLeft { 
     animation: fadeInLeft 1s ease-in-out; 
 }
+
+.mobile-menu-slide {
+    transform: translateX(-100%); /* Start off-screen */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mobile-menu-slide.active {
+    transform: translateX(0); /* Slide in */
+  }
+
+
+  .small-font-d{
+    font-size: calc(.87vh + .87vw)
+  }
+
+  .small-font-m {
+    font-size: calc(2vh + 1.5vw)
+  }

@@ -4,13 +4,27 @@ import "./more.css";
 
 export default function About(){
     const [isVisible, setIsVisible] = useState(false); 
-
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
     
     useEffect(() => {
         setTimeout(() => {
           setIsVisible(true);
         }, 10);
       }, []);
+
+      useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        }; 
+
+        window.addEventListener('resize', handleResize); 
+
+        return () => {
+            window.removeEventListener('resize', handleResize);             
+        }
+    }, []); 
+
+
 
     return(
         <section class={`${isVisible ? "fadeInLeft" : ""}`}>
@@ -21,10 +35,28 @@ export default function About(){
             </header> 
 
             <div class="container py-5 mx-auto text-center"> 
-                <h3 style={{fontsize: '2rem'}} class="text-gray-50 mt-t">Hello!</h3>
-                <p style={{fontsize : '1rem'}} class="text-gray-50 mt-t max-w-4">
-                My name is Lukas and I am a sophmore Computer Science major at Montclair State University. 
-                </p>
+                <h3 class="text-gray-50 text-sm">Hello!</h3>
+                <div class="max-w-md mx-auto flex justify-center items-center">
+
+                    {isMobile?  (
+                        <div class="p-4 rounded-lg">
+                            <p class="text-gray-50 small-font-m">
+                            My name is Lukas and I am a sophmore Computer Science major at Montclair State University. 
+                            I love coding in my free time and am always looking to create new projects. 
+                            </p>
+                        </div> 
+                    ) : 
+                    (
+                        <div>
+                            <p class="text-gray-50 small-font-d">
+                                My name is Lukas and I am a sophmore Computer Science major at Montclair State University. 
+                                I love coding in my free time and am always looking to create new projects. 
+                            </p>
+                        </div>
+                    )
+                    }
+                
+                </div> 
             </div> 
 
             <div class="container mx-auto flex justify-center"> 
