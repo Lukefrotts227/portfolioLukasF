@@ -1,5 +1,7 @@
 import React, { useState,  useEffect } from "react";
-import Temp from '../logo192.png'; 
+import Temp from '../myRand.png'; 
+//import { PersonalImages } from '../data';
+
 
 import "./more.css";
 
@@ -20,11 +22,11 @@ export default function Intro(){
             <div style={{fontSize: '3rem'}} class={`container mx-auto text-center bg-gray-800 ${isVisible ? "fadeInRight" : ""}`}> 
                 <h1 class="text-gray-50">Hello, My name is Lukas</h1>
                 <h1 class="text-gray-50">Welcome to my Portfolio</h1> 
-                <div class="container mx-auto flex justify-center"> 
+                <div class="carousel  mx-auto flex justify-center"> 
                     <img
                     src={Temp}
                     alt="Logo"
-                    class="w-45 h-45 object-center rounded-full"
+                    class="w-20 h-20 object-center rounded-full"
                     /> 
                 </div>
             </div>        
