@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 export default function Navbar(){
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [navbarVisible, setNavbarVisible] = useState(true);
+    //const [navbarVisible, setNavbarVisible] = useState(true);
 
 
     
@@ -29,7 +29,7 @@ export default function Navbar(){
 
     return(
         <nav class={`fixed top-0 left-0 w-full ${
-            navbarVisible ? 'bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900' : 'bg-opacity-0'
+             'bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900'
           }`}>   
             <div class="container text-center mx-auto"> 
                     {isMobile ? (
@@ -40,7 +40,7 @@ export default function Navbar(){
                             About
                         </a>
                         <a href="#InTouch" class="block text-white hover:text-gray-300 my-2">
-                            Get in Touch with Me
+                            Get in Touch
                         </a>
                         <a href="#Projects" class="block text-white hover:text-gray-300 my-2">
                             Projects
@@ -60,7 +60,7 @@ export default function Navbar(){
                     <div class="flex justify-center items-center mx-auto">
                         <div class="md:flex space-x-4"> 
                             <a href="#About" class="text-white hover:text-gray-300 text-xl">About</a>
-                            <a href="#InTouch" class="text-white hover:text-gray-300 text-xl">Get in Touch with Me</a>
+                            <a href="#InTouch" class="text-white hover:text-gray-300 text-xl">Get in Touch</a>
                             <a href="#Projects" class="text-white hover:text-gray-300 text-xl">Projects</a>
                             <a href="#Skills" class="text-white hover:text-gray-300 text-xl">Skills</a>
                             <a href="#Academics" class="text-white hover:text-gray-300 text-xl">Academics</a>

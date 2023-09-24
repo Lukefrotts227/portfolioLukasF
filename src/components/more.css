@@ -36,20 +36,28 @@ animation: fadeInRight 1s ease-in-out;
     animation: fadeInLeft 1s ease-in-out; 
 }
 
-.mobile-menu-slide {
-    transform: translateX(-100%); /* Start off-screen */
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .mobile-menu-slide.active {
-    transform: translateX(0); /* Slide in */
+.med-font-u{
+    font-size: calc(3.3vh + 3.3vw);
   }
 
-
-  .small-font-d{
-    font-size: calc(.87vh + .87vw)
+.small-font-d{
+    font-size: calc(.67vh + .67vw);
   }
 
-  .small-font-m {
-    font-size: calc(2vh + 1.5vw)
+.small-font-m {
+    font-size: calc(2vh + 1.5vw);
+  }
+
+
+
+
+.blur {
+    /* Blur effect for the rest of the content */
+    backdrop-filter: blur(5px); /* Adjust blur amount as needed */
+  }
+
+.enlarge {
+    /* Enlarge the About component */
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    /* Add any other styles to enlarge the component */
   }

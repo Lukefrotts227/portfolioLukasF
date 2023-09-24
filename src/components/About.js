@@ -5,6 +5,12 @@ import "./more.css";
 export default function About(){
     const [isVisible, setIsVisible] = useState(false); 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
+    const [isFocused, setIsFocused] = useState(false); 
+
+
+    const handleFocusToggle = () => {
+      setIsFocused(!isFocused);
+    };
     
     useEffect(() => {
         setTimeout(() => {
@@ -26,17 +32,23 @@ export default function About(){
 
 
 
+
     return(
-        <section class={`${isVisible ? "fadeInLeft" : ""}`}>
+        <section class={`flex flex-col ${isVisible ? "fadeInLeft" : ""}`}>
             <header class="bg-gray-800 py-4 flex items-center justify-center">
                 <div class="container mx-auto text-center">
                     <h1 style={{fontSize: '3rem'}} class=" text-gray-50 font-semibold">About Me</h1>
                 </div>
             </header> 
 
-            <div class="container py-5 mx-auto text-center"> 
-                <h3 class="text-gray-50 text-sm">Hello!</h3>
-                <div class="max-w-md mx-auto flex justify-center items-center">
+            <div class={`py-5 mx-auto text-center`}> 
+
+
+            <h3 class={`text-gray-50 med-font-u`}>Hello!</h3>
+
+
+                <div class={`max-w-md mx-auto flex justify-center items-center ${isFocused ? 'enlarge' : ''}`} 
+                onClick={() => setIsFocused(!isFocused)}>
 
                     {isMobile?  (
                         <div class="p-4 rounded-lg">
@@ -47,7 +59,7 @@ export default function About(){
                         </div> 
                     ) : 
                     (
-                        <div>
+                        <div class={``}>
                             <p class="text-gray-50 small-font-d">
                                 My name is Lukas and I am a sophmore Computer Science major at Montclair State University. 
                                 I love coding in my free time and am always looking to create new projects. 
@@ -60,12 +72,16 @@ export default function About(){
             </div> 
 
             <div class="container mx-auto flex justify-center"> 
+                    <div> 
                     <img
                     src={Temp}
                     alt="Logo"
                     class="py-4 w-44 h-44f object-center rounded-full"
                     /> 
+                    </div> 
             </div>
+
+
         </section> 
         );
 }
