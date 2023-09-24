@@ -37,7 +37,7 @@ animation: fadeInRight 1s ease-in-out;
 }
 
 .med-font-u{
-    font-size: calc(3.3vh + 3.3vw);
+    font-size: calc(2.5vh + 2.5vw);
   }
 
 .small-font-d{
@@ -47,6 +47,18 @@ animation: fadeInRight 1s ease-in-out;
 .small-font-m {
     font-size: calc(2vh + 1.5vw);
   }
+
+.title-font-u{
+    font-size: calc(5vh + 5vw); 
+}
+
+.title-font-d{
+    font-size: calc(2.8vh + 2.8vw)
+}
+
+.title-font-m{
+    font-size: calc(3.2vh + 3vw); 
+}
 
 
 
