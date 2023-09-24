@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@keyframes fadeInRight{
+    0%{
+        transform: translateX(100%); 
+        opacity: 0; 
+    }
+    50% { 
+        opacity: 1; 
+        
+    }
+
+    100% {
+        transform: translateX(0%); 
+    }
+}
+
+@keyframes fadeInLeft{
+    0%{
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    50% { 
+        opacity: 1; 
+        
+    }
+
+    100% {
+        transform: translateX(0%); 
+    }
+
+}
+.fadeInRight {
+animation: fadeInRight 1s ease-in-out;
+} 
+
+.fadeInLeft { 
+    animation: fadeInLeft 1s ease-in-out; 
+}
+
+.med-font-u{
+    font-size: calc(2.5vh + 2.5vw);
+  }
+
+.small-font-d{
+    font-size: calc(.67vh + .67vw);
+  }
+
+.small-font-m {
+    font-size: calc(2vh + 1.5vw);
+  }
+
+.title-font-u{
+    font-size: calc(5vh + 5vw); 
+}
+
+.title-font-d{
+    font-size: calc(2.8vh + 2.8vw)
+}
+
+.title-font-m{
+    font-size: calc(3.2vh + 3vw); 
+}
+
+
+
+
+.blur {
+    /* Blur effect for the rest of the content */
+    backdrop-filter: blur(5px); /* Adjust blur amount as needed */
+  }
+
+.enlarge {
+    /* Enlarge the About component */
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    /* Add any other styles to enlarge the component */
+  }

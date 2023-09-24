@@ -54,6 +54,10 @@ export default function Navbar(){
                         <a href="#Next" class="block text-white hover:text-gray-300 my-2">
                             Whats Next?
                         </a>
+
+                        <a href="#Resume" class="block text-white hover:text-gray-300 my-2"> 
+                            Resume
+                        </a> 
                         </div> 
                         </div>
                     ): (
@@ -65,6 +69,7 @@ export default function Navbar(){
                             <a href="#Skills" class="text-white hover:text-gray-300 text-xl">Skills</a>
                             <a href="#Academics" class="text-white hover:text-gray-300 text-xl">Academics</a>
                             <a href="#Next" class ="text-white hover:text-gray-300 text-xl">Whats Next?</a>
+                            <a href="#Resume" class="text-white hover:text-gray-300 text-x1">Resume</a>
                         </div> 
                     </div> 
 
