@@ -38,51 +38,44 @@ export default function About(){
     <section class={`flex flex-col ${isVisible ? "fadeInLeft" : ""}`}>
       {/* Header */}
         {isMobile? (
+        <div>
         <header class="bg-gray-800 py-4 flex items-center justify-center">
             <div class="container mx-auto text-center">
             <h1 class="text-gray-50 font-semibold title-font-m">About Me</h1>
             </div>
         </header>
+            <content> 
+            <p class="text-gray-50 small-font-d">
+                My name is Lukas and I am a sophomore Computer Science major at Montclair State University.
+                I love coding in my free time and am always looking to create new projects.
+                To hone my skills, I have and will continue to attend hackathons.
+            </p> 
+        </content>    
+        </div>     
+
         ) : 
         (
-            <header class="bg-gray-800 py-3 flex items-center justify-center">
+        <div> 
+            <header class="bg-gray-800 pb-12 pt-12 flex items-center justify-center">
                 <div class="container mx-auto text-center"> 
                     <h1 class="text-gray-50 font-semibold title-font-d">About Me</h1>
                 </div> 
-
             </header>
+
+            <content> 
+            <p class="text-gray-50 small-font-d">
+                My name is Lukas and I am a sophomore Computer Science major at Montclair State University.
+                I love coding in my free time and am always looking to create new projects.
+                To hone my skills, I have and will continue to attend hackathons.
+            </p>  
+            </content>
+        </div>
         )}
 
-
-        {/* Content */}
-
-        {isMobile? (
-            <content> 
-                <p class="text-gray-50 small-font-d">
-                    My name is Lukas and I am a sophomore Computer Science major at Montclair State University.
-                    I love coding in my free time and am always looking to create new projects.
-                    To hone my skills, I have and will continue to attend hackathons.
-                </p> 
-
-            </content> 
-        ) : 
-
-        (
-            <content> 
-                <p class="text-gray-50 small-font-d">
-                    My name is Lukas and I am a sophomore Computer Science major at Montclair State University.
-                    I love coding in my free time and am always looking to create new projects.
-                    To hone my skills, I have and will continue to attend hackathons.
-                </p>  
-            </content>
-        )
-    
-        }
 
 
       {/* Additional Content */}
 
-    
       <div class="container mx-auto flex justify-center">
         <div>
           <img
