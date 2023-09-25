@@ -43,25 +43,53 @@
 
 }
 
-@keyframes dropDownEnter {
+@keyframes dropdownEnter {
+    0% {
+        opacity: 0;
+        max-height: 0;
+        visibility: hidden;
+      }
+      100% {
+        opacity: 1;
+        max-height: auto; 
+        visibility: visible;
+      }
+}
+
+@keyframes dropdownExit {
+    0% {
+        opacity: 1;
+        max-height: auto;
+        visibility: visible;
+      }
+      100% {
+        opacity: 0;
+        max-height: 0;
+        visibility: hidden;
+      }
+}
+
+@keyframes textDropdownEnter{
     from {
-        display: none; 
         opacity: 0; 
+        transform: translateY(10%)
+
     }
     to {
-        display: block; 
         opacity: 1; 
+        transform: translateY(0); 
     }
 }
 
-@keyframes dropDownExit {
+@keyframes textDropDownExit{
     from {
-        display: block;
         opacity: 1; 
+        transform: translateY(0); 
     }
     to {
-        display: none; 
-        opacity: 0;
+        opacity: 0; 
+        transform: translateY(10%); 
+
     }
 }
 
@@ -75,6 +103,9 @@
 
 .fadeInLeft { 
     animation: fadeInLeft 1s ease-in-out; 
+}
+.navbar-mobile-button-font{
+    font-size: calc(1.8vh + 2vw); 
 }
 
 .med-font-u{
@@ -116,10 +147,17 @@
   }
 
 .mobile-dropdown-enter{
-    display: block; 
+    animation: dropdownEnter .3s ease-in-out forwards; 
     
 }
 .mobile-dropdown-exit{
-    display: none; 
-    
+    animation: dropdownExit .3s ease-in-out forwards;  
+
+}
+
+.mobile-dropdown-text-enter{
+    animation: textDropdownEnter 0.3s ease-in-out forwards; 
+}
+.mobile-dropdown-text-exit{
+    animation: textDropdownExit 0.3s ease-in-out forwards; 
 }

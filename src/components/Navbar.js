@@ -33,9 +33,10 @@ export default function Navbar(){
           }`}>   
             
                     {isMobile ? (
-                        <div class={`container text-center mx-auto md:hidden ${mobileMenuOpen ? 'mobile-dropdown-enter' : 'mobile-dropdown-exit'} py-3`}>
+                        
+                        <div class={`relative text-center mx-auto md:hidden ${mobileMenuOpen ? 'mobile-dropdown-enter' : 'mobile-dropdown-exit'} `}>
 
-                                <div class="text-center py-4">                      
+                                <div class={`text-center py-4 ${mobileMenuOpen ? 'mobile-dropdown-text-enter' : 'mobile-dropdown-text-exit'}`}>                      
                                     <a href="#About" class="block text-white hover:text-gray-300 my-2">
                                         About
                                     </a>
@@ -61,17 +62,18 @@ export default function Navbar(){
                                 </div> 
                             
                         </div>
+                    
                     ): (
-                    <div class="container text-center mx-auto">
+                    <div class="container text-center mx-auto py-4">
                         <div class="flex justify-center items-center mx-auto">
-                            <div class="md:flex space-x-4"> 
-                                <a href="#About" class="text-white hover:text-gray-300 text-xl">About</a>
-                                <a href="#InTouch" class="text-white hover:text-gray-300 text-xl">Get in Touch</a>
-                                <a href="#Projects" class="text-white hover:text-gray-300 text-xl">Projects</a>
-                                <a href="#Skills" class="text-white hover:text-gray-300 text-xl">Skills</a>
-                                <a href="#Academics" class="text-white hover:text-gray-300 text-xl">Academics</a>
-                                <a href="#Next" class ="text-white hover:text-gray-300 text-xl">Whats Next?</a>
-                                <a href="#Resume" class="text-white hover:text-gray-300 text-xl">Resume</a>
+                            <div class="md:flex space-x-8 text-xl"> 
+                                <a href="#About" class="text-white hover:text-gray-300">About</a>
+                                <a href="#InTouch" class="text-white hover:text-gray-300">Get in Touch</a>
+                                <a href="#Projects" class="text-white hover:text-gray-300">Projects</a>
+                                <a href="#Skills" class="text-white hover:text-gray-300">Skills</a>
+                                <a href="#Academics" class="text-white hover:text-gray-300">Academics</a>
+                                <a href="#Next" class ="text-white hover:text-gray-300">Whats Next?</a>
+                                <a href="#Resume" class="text-white hover:text-gray-300">Resume</a>
                             </div> 
                         </div> 
                     </div>
@@ -82,7 +84,7 @@ export default function Navbar(){
           <div class="md:hidden text-center">
             <button
               onClick={toggleMobileMenu}
-              class="text-white hover:text-gray-300"
+              class={`navbar-mobile-button-font text-white hover:text-gray-300`}
             >
               {mobileMenuOpen ? 'Close' : 'Menu'}
             </button>
