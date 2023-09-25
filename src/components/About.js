@@ -1,6 +1,5 @@
 import React, { useState,  useEffect } from "react";
 import Temp from '../logo192.png'; 
-import "./more.css";
 
 export default function About(){
     const [isVisible, setIsVisible] = useState(false); 

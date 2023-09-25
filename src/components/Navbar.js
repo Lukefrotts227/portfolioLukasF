@@ -35,30 +35,30 @@ export default function Navbar(){
                     {isMobile ? (
                         <div className={`md:hidden ${mobileMenuOpen ? 'block' : 'hidden'} py-4`}>  
 
-                        <div className="text-center py-4">                      
-                        <a href="#About" class="block text-white hover:text-gray-300 my-2">
-                            About
-                        </a>
-                        <a href="#InTouch" class="block text-white hover:text-gray-300 my-2">
-                            Get in Touch
-                        </a>
-                        <a href="#Projects" class="block text-white hover:text-gray-300 my-2">
-                            Projects
-                        </a>
-                        <a href="#Skills" class="block text-white hover:text-gray-300 my-2">
-                            Skills
-                        </a>
-                        <a href="#Academics" class="block text-white hover:text-gray-300 my-2">
-                            Academics
-                        </a>
-                        <a href="#Next" class="block text-white hover:text-gray-300 my-2">
-                            Whats Next?
-                        </a>
+                            <div className="text-center py-4">                      
+                                <a href="#About" class="block text-white hover:text-gray-300 my-2">
+                                    About
+                                </a>
+                                <a href="#InTouch" class="block text-white hover:text-gray-300 my-2">
+                                    Get in Touch
+                                </a>
+                                <a href="#Projects" class="block text-white hover:text-gray-300 my-2">
+                                    Projects
+                                </a>
+                                <a href="#Skills" class="block text-white hover:text-gray-300 my-2">
+                                    Skills
+                                </a>
+                                <a href="#Academics" class="block text-white hover:text-gray-300 my-2">
+                                    Academics
+                                </a>
+                                <a href="#Next" class="block text-white hover:text-gray-300 my-2">
+                                    Whats Next?
+                                </a>
 
-                        <a href="#Resume" class="block text-white hover:text-gray-300 my-2"> 
-                            Resume
-                        </a> 
-                        </div> 
+                                <a href="#Resume" class="block text-white hover:text-gray-300 my-2"> 
+                                    Resume
+                                </a> 
+                            </div> 
                         </div>
                     ): (
                     <div class="flex justify-center items-center mx-auto">
@@ -69,7 +69,7 @@ export default function Navbar(){
                             <a href="#Skills" class="text-white hover:text-gray-300 text-xl">Skills</a>
                             <a href="#Academics" class="text-white hover:text-gray-300 text-xl">Academics</a>
                             <a href="#Next" class ="text-white hover:text-gray-300 text-xl">Whats Next?</a>
-                            <a href="#Resume" class="text-white hover:text-gray-300 text-x1">Resume</a>
+                            <a href="#Resume" class="text-white hover:text-gray-300 text-xl">Resume</a>
                         </div> 
                     </div> 
 

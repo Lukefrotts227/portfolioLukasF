@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'; 
-import './more.css'; 
 
 export default function Skills(){
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
