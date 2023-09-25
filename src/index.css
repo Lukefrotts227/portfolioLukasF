@@ -43,12 +43,34 @@
 
 }
 
+@keyframes dropDownEnter {
+    from {
+        display: none; 
+        opacity: 0; 
+    }
+    to {
+        display: block; 
+        opacity: 1; 
+    }
+}
+
+@keyframes dropDownExit {
+    from {
+        display: block;
+        opacity: 1; 
+    }
+    to {
+        display: none; 
+        opacity: 0;
+    }
+}
+
 .my-spin-basic-1s-eio {
     animation: my-spin-basic 1s ease-in-out
 }
 
 .fadeInRight {
-animation: fadeInRight 1s ease-in-out;
+    animation: fadeInRight 1s ease-in-out;
 } 
 
 .fadeInLeft { 
@@ -92,3 +114,12 @@ animation: fadeInRight 1s ease-in-out;
     transform: scale(1.2); /* Adjust the scale factor as needed */
     /* Add any other styles to enlarge the component */
   }
+
+.mobile-dropdown-enter{
+    display: block; 
+    
+}
+.mobile-dropdown-exit{
+    display: none; 
+    
+}
