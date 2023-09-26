@@ -132,6 +132,26 @@
     font-size: calc(3.2vh + 3vw); 
 }
 
+.h2-font-m {
+    font-size: calc(2.8vh + 2.6vw); 
+}
+
+.h4-font-m {
+    font-size: calc(2vh + 1.9vw); 
+}
+
+.h3-font-m {
+    font-size: calc(2.3vh + 2.1vw); 
+}
+.h5-font-m {
+    font-size: calc(1.5vh + 1.3vw); 
+}
+
+.very-small-font-m{
+    font-size: calc(.87vh + .81vw); 
+}
+
+
 
 
 

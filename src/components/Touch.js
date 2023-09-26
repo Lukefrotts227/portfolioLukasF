@@ -1,7 +1,25 @@
 import React, { useState, useEffect } from 'react'; 
 
+
 export default function Touch(){
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
+    const [currentSlide, setCurrentSlide] = useState(999); 
+    const [previousSlide, setPreviousSlide] = useState(-1); 
+
+    const SlideCount = 3; 
+    
+
+    
+    
+    const toggleSlideLeft = () => {
+        setPreviousSlide(currentSlide); 
+        setCurrentSlide(currentSlide - 1); 
+        
+    }
+    const toggleSlideRight = () =>{
+        setPreviousSlide(currentSlide); 
+        setCurrentSlide(currentSlide + 1); 
+    }
 
 
     useEffect(() => {
@@ -19,8 +37,80 @@ export default function Touch(){
 
 
     return(
-        <section class="flex items-center justify-center">
-            This is the stuff about me
+        <section>
+            {isMobile ?  (
+
+                <div class="items-center"> 
+                    <div>
+                        <div class="text-center h3-font-m py-4 px-4"> 
+                            <h3>Check me out</h3> 
+                        </div> 
+
+                        <div class="container mx-auto px-5">
+                            <div> 
+                                <div class="items-center text-center pb-8">
+                                    <div class={`${currentSlide % SlideCount === 0 ? "block" : "hidden"}`}>
+                                        <h1>My GitHub</h1>
+
+                                    </div>
+                
+                                    <div class={`${currentSlide % SlideCount === 1 ? "block" : "hidden"}`}>
+                                        <h1>My Devpost</h1>
+
+                                    </div>
+
+                                    <div class={`${currentSlide % SlideCount === 2 ? "block" : "hidden"}`}>
+                                        <h1>My other?</h1>
+
+                                    </div> 
+                                </div>
+
+                                <div class="flex items-center text-center small-font-m pb-8">
+                                    <div onClick={toggleSlideLeft} class="pr-5">
+
+                                    </div>
+
+                                    <div onClick={toggleSlideRight} class="">
+
+                                    </div>
+
+                                </div> 
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-center h4-font-m">  
+                        <h1>Get in touch with me</h1>
+                    </div> 
+
+                    <div class="text-center h5-font-m px-4 py-4"> 
+                        <h5>My main email</h5> <h5>ljfrotton@gmail.com</h5>
+                        <br/> 
+                        <h5>My school email</h5> <h5>frottonl1@montclair.edu</h5>
+                    </div>
+
+
+
+                </div>
+            )
+            :
+            (
+                <div>
+
+                    <div> 
+                        <h1>Get in touch with me</h1>
+                    </div> 
+                    
+                    <div> 
+                        <h2>My main email: ljfrotton@gmail.com</h2> 
+                        <h2>My school email: frottonl1@montclair.edu</h2>
+                    </div>
+
+                </div> 
+            )
+            
+            }
+            
         </section>
     );
 }
