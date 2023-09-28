@@ -19,7 +19,30 @@ export default function Projects(){
 
     return(
         <div class="flex justify-center items-center">
-        Showcase my projects
+
+            {isMobile ?  (
+                <div class= "py-12">
+
+                    <div class = "text-center h3-font-m py-4 px-4"> 
+                        <h1>Here are my Big Projects</h1>
+                    </div> 
+
+                    <div class = "text-center h3-font-m py-2 px-4">
+                        <h1>Here are some of my Smaller Projects</h1>
+                    </div>
+
+                </div> 
+
+
+            ) : 
+
+            (
+                <div> 
+                    My project
+                </div> 
+            )
+            
+            }
         </div>
         ); 
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'; 
 
 
+
 export default function Touch(){
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
     const [currentSlide, setCurrentSlide] = useState(999); 
@@ -20,6 +21,7 @@ export default function Touch(){
         setPreviousSlide(currentSlide); 
         setCurrentSlide(currentSlide + 1); 
     }
+
 
 
     useEffect(() => {
@@ -60,17 +62,23 @@ export default function Touch(){
                                     </div>
 
                                     <div class={`${currentSlide % SlideCount === 2 ? "block" : "hidden"}`}>
-                                        <h1>My other?</h1>
+                                        <h1>My LinkedIn</h1>
 
                                     </div> 
                                 </div>
 
-                                <div class="flex items-center text-center small-font-m pb-8">
-                                    <div onClick={toggleSlideLeft} class="pr-5">
-
+                                <div class="flex justify-center items-center mx-auto text-center small-font-m pb-8">
+                                    <div onClick={toggleSlideLeft} class="inline-block bg-red-400 pr-12">
+                                        <button class="py-3 px-4 h-4 w-8">
+                                            
+                                        </button>
+                                        
                                     </div>
 
-                                    <div onClick={toggleSlideRight} class="">
+                                    <div onClick={toggleSlideRight} class ="inline-block bg-red-400 pl-12">
+                                        <button class="py-3 px-4 h-4 w-8">
+                                            
+                                        </button>
 
                                     </div>
 
