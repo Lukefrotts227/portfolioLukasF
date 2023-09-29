@@ -100,14 +100,44 @@ export default function Touch(){
 
                                 <div class="flex justify-center items-center mx-auto text-center small-font-m pb-8 bg-gray-800">
                                     <div onClick={toggleSlideLeft} class="inline-block pr-4">
-                                        <button class="py-3 px-4 h-12 w-12 rounded-full bg-red-400">
+                                        <button class="">
+                                            <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="50"
+                                            height="50"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="black"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                                <line x1="19" y1="12" x2="5" y2="12" />
+                                                <polyline points="12 5 5 12 12 19" />
+                                            </svg>
+
                                             
                                         </button>
                                         
                                     </div>
 
                                     <div onClick={toggleSlideRight} class ="inline-block pl-4">
-                                        <button class="py-3 px-4 h-12 w-12 rounded-full bg-red-400">
+                                        <button class="">
+                                            <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="50"
+                                            height="50"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="black"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            >
+                                                <line x1="5" y1="12" x2="19" y2="12" />
+                                                <polyline points="12 5 19 12 12 19" />
+                                            </svg>
+
                                             
                                         </button>
 

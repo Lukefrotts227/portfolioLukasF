@@ -61,11 +61,13 @@ export default function About(){
             </header>
 
             <content> 
-            <p class="text-gray-50 small-font-d">
-                My name is Lukas and I am a sophomore Computer Science major at Montclair State University.
-                I love coding in my free time and am always looking to create new projects.
-                To hone my skills, I have and will continue to attend hackathons.
-            </p>  
+                <div class="flex flex-wrap">
+                    <p class="text-gray-50 small-font-d">
+                        My name is Lukas and I am a sophomore Computer Science major at Montclair State University.
+                        I love coding in my free time and am always looking to create new projects.
+                        To hone my skills, I have and will continue to attend hackathons.
+                    </p>  
+                </div>
             </content>
         </div>
         )}
