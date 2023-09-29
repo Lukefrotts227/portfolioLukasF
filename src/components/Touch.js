@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'; 
 
+import Github from '../github-mark-white.png'; 
+import Devpost from '../devpost.png'; 
+import Linkedin from '../link.png'; 
 
 
 export default function Touch(){
@@ -52,31 +55,59 @@ export default function Touch(){
                             <div> 
                                 <div class="items-center text-center pb-8">
                                     <div class={`${currentSlide % SlideCount === 0 ? "block" : "hidden"}`}>
-                                        <h1>My GitHub</h1>
-
+                                        <h1 class="pb-5">My GitHub</h1>
+                                        
+                                        <div class="flex justify-center items-center rounded-full">
+                                            <a href="https://github.com/Lukefrotts227" target="_blank" rel="noopener noreferrer">
+                                                <img
+                                                src={Github}
+                                                class="max-w-12 max-h-12"
+                                                />
+                                            </a>
+                                        </div>
+                                    
                                     </div>
                 
                                     <div class={`${currentSlide % SlideCount === 1 ? "block" : "hidden"}`}>
-                                        <h1>My Devpost</h1>
+                                        <h1 class="pb-5">My Devpost</h1>
+
+                                        
+                                        <div class="flex justify-center items-center rounded-full">
+                                            <a href="https://devpost.com/ljfrotton" target="_blank" rel="noopener noreferrer">
+                                                <img
+                                                src={Devpost}
+                                                class="max-w-12 max-h-12"
+                                                />
+                                            </a>
+                                        </div>
 
                                     </div>
 
                                     <div class={`${currentSlide % SlideCount === 2 ? "block" : "hidden"}`}>
-                                        <h1>My LinkedIn</h1>
+                                        <h1 class="pb-5">My LinkedIn</h1>
+                                        
+                                        <div class="flex justify-center items-center rounded-full">
+                                            <a href="https://www.linkedin.com/in/lukas-frotton-07b79422b/" target="_blank" rel="noopener noreferrer">
+                                                <img
+                                                src={Linkedin}
+                                                class="max-w-12 max-h-12"
+                                                />
+                                            </a>
+                                        </div>
 
                                     </div> 
                                 </div>
 
-                                <div class="flex justify-center items-center mx-auto text-center small-font-m pb-8">
-                                    <div onClick={toggleSlideLeft} class="inline-block bg-red-400 pr-12">
-                                        <button class="py-3 px-4 h-4 w-8">
+                                <div class="flex justify-center items-center mx-auto text-center small-font-m pb-8 bg-gray-800">
+                                    <div onClick={toggleSlideLeft} class="inline-block pr-4">
+                                        <button class="py-3 px-4 h-12 w-12 rounded-full bg-red-400">
                                             
                                         </button>
                                         
                                     </div>
 
-                                    <div onClick={toggleSlideRight} class ="inline-block bg-red-400 pl-12">
-                                        <button class="py-3 px-4 h-4 w-8">
+                                    <div onClick={toggleSlideRight} class ="inline-block pl-4">
+                                        <button class="py-3 px-4 h-12 w-12 rounded-full bg-red-400">
                                             
                                         </button>
 
