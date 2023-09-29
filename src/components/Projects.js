@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'; 
 
+import { projects, miniProjects } from '../data'; 
+
+
 export default function Projects(){
 
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
@@ -25,6 +28,15 @@ export default function Projects(){
 
                     <div class = "text-center h3-font-m py-4 px-4"> 
                         <h1>Here are my Big Projects</h1>
+
+                        <div> 
+                            {projects.map((project) => (
+                                something
+
+                            ))}
+
+                        </div>
+                        
                     </div> 
 
                     <div class = "text-center h3-font-m py-2 px-4">
