@@ -14,7 +14,7 @@ export const projects = [
     {
         name: "Climate Collab", 
         mini_description:  "Combat climate change through collaboration",
-        description: "",
+        description: "A simple carbon calcuator that combines the data of mutiple indivduals to push progress on a macro scale",
         how: "React, MongoDB Atlas, Flask",
         future: "Improve the carbon emssion calculation algorithim, improve the user interface, add more functionality "
         + "and add more social aspects",
@@ -24,8 +24,8 @@ export const projects = [
 
     {
         name: "Community Organizer", 
-        mini_description:  "",
-        description: "",
+        mini_description: "Bringing communities together",
+        description: "A basic social media app that communites so they can organize local political action",
         how: "React, Fastapi, MongoDB atlas, OpenAI",
         future: "Imporve user interface, add more traditional social media features, include an sql database, transistion to the "
         + "django framework",
