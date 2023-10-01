@@ -192,3 +192,8 @@
 .mobile-dropdown-text-exit{
     animation: textDropdownExit 0.3s ease-in-out forwards; 
 }
+
+
+.quite-small-font-m {
+    font-size: calc(1.355vh + 1.355vh); 
+}

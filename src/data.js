@@ -40,20 +40,42 @@ export const miniProjects = [
         name: "C++ hashtable",
         description: "A custom hashtable that supports resizing, custom data types and custom hashing functions",
         how: "C++",
-        future: "",
+        future: "Add greater functionlaity and find ways to make it more unique and applicable",
         where: "https://github.com/Lukefrotts227/learningC/tree/Main/datastructures/hashtablecpp"
     },
 ]
 
 export const skills = [
-
+    "Python",
+    "Java", 
+    "C/C++",
+    "MongoDB",
+    "React",
+    "Html/Css/Js",
+    "Express",
+    "Flask",
 ]
 
-export const upocomingHackathons = [
+export const courses = [
+    {
+        name: "Java programming II",
+        description: "In this course we delved deeper into the world of java programming. We covered topics "
+        + "such as object oriented programming, inheritence and polymorphism.",
+    },
+    {
+        name: "Computer Systems",
+        description: "In this course we covered the underlying systems of how computers operate. This included covering logic circuits, registers "
+        + "and memory. We then moved into basic assembly programming with the MIPS architecture.",
+    }, 
 
+    {
+        name: "Introduction to python programming", 
+        description: "In this course we covered the basics of python programming."
+    },
 ]
 
-export const upcomingCourses = [
 
-]
+export const next =[
+
+] 
 

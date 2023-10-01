@@ -36,13 +36,13 @@ export default function Projects(){
                         <div> 
                             {projects.map((project) => (
 
-                                <div class="">
+                                <div class="pb-6">
                                     <div class= "text-center project-font-m pb-2"> 
                                         <h3>{project.name}</h3>
                                         <h4>{project.mini_description}</h4> 
                                     </div>
 
-                                    <div class="relative flex justify-center items-center h-60 "> 
+                                    <div class="relative flex justify-center items-center h-80 "> 
                                         <div class={`absolute inset-0`}>
                                             
                                             <img
@@ -52,7 +52,37 @@ export default function Projects(){
                                             />
                                         </div>
 
-                                        <div class={`px-8 py-10 relative z-8 w-full h-full border-4 border-gray-600 bg-gray-900 opacity-0 hover:opacity-100`}> 
+                                        <div class={`px-8 py-10 relative z-8 w-full h-full border-4 border-green-500 bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 opacity-0 hover:opacity-100`}> 
+                                            <div class="text-center quite-small-font-m">
+                                                <div class="pb-5">
+                                                    <p>with: {project.how}</p>
+                                                </div> 
+                                                <div class="pb-4">
+                                                    <p>{project.description}</p>
+                                                </div>
+
+                                                <div> 
+                                                    <p class ="pb-2">Check it out</p>
+                                                    <a href={project.where} target="_blank" rel="noopener noreferrer">
+                                                        <button class="">
+                                                            <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="50"
+                                                            height="50"
+                                                            viewBox="0 0 24 24"
+                                                            fill="none"
+                                                            stroke="white"
+                                                            stroke-width="2"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            >
+                                                                <line x1="5" y1="12" x2="19" y2="12" />
+                                                                <polyline points="12 5 19 12 12 19" />
+                                                            </svg>                                                    
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
 
 
                                         </div>

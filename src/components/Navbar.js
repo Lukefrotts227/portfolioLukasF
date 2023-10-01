@@ -41,7 +41,7 @@ export default function Navbar(){
                                     <a href="#About" class="block text-white hover:text-gray-300 my-2">
                                         About
                                     </a>
-                                    <a href="#InTouch" class="block text-white hover:text-gray-300 my-2">
+                                    <a href="#Touch" class="block text-white hover:text-gray-300 my-2">
                                         Get in Touch
                                     </a>
                                     <a href="#Projects" class="block text-white hover:text-gray-300 my-2">
