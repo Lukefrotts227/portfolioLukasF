@@ -35,9 +35,9 @@ export default function Intro(){
     return(
         <div>
         {isMobile ? (
-            <header class="bg-gray-800 flex items-center jusitfy-center">
-                <div class={`container mx-auto py-3 mt-16 text-center bg-gray-800 ${isVisible ? "fadeInRight" : ""}`}> 
-                    <div class="mx-auto flex justify-center"> 
+            <header class="flex items-center jusitfy-center">
+                <div class={`container mx-auto py-3 mt-10 text-center bg-gray-800 ${isVisible ? "fadeInRight" : ""}`}> 
+                    <div class="mx-auto flex justify-center pb-6"> 
                                 <img
                                 src={Temp}
                                 alt="Logo"
@@ -54,16 +54,16 @@ export default function Intro(){
         )
         : 
         (
-            <header class="bg-gray-800 flex items-start jusitfy-start">
-                <div class={`flex container mx-auto py-3 mt-16 text-center bg-gray-800 ${isVisible ? "fadeInRight" : ""}`}> 
-                    <div class="inline-block mx-auto justify-center"> 
+            <header class="">
+                <div class={`flex container mx-auto py-6 mt-16 text-center ${isVisible ? "fadeInRight" : ""}`}> 
+                    <div class="inline-block mx-auto"> 
                             <img
                             src={Temp}
                             alt="Logo"
-                            class="w-32 h-32 object-center rounded-full mr-4"
+                            class="w-66 h-66 object-center rounded-full mr-4"
                             /> 
                         </div>
-                    <div class="inline-block">
+                    <div class="inline-block mx-auto pt-12">
                         <h1 class="text-gray-50 med-font-u">Hello, My name is Lukas</h1>
                         <h1 class="text-gray-50 med-font-u">Welcome to my Portfolio</h1> 
                     </div> 

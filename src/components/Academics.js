@@ -20,8 +20,8 @@ export default function Academics(){
         <div class="flex flex-wrap p-8 justify-center items-center">
             {
                 courses.map((course) => (
-                    <div class="pb-5"> 
-                        <div class= "p-3 sm:w-1/2 w-full h-full text-center bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 rounded border-4 border-green-500"> 
+                    <div class={`pb-5 h-full w-full ${isMobile ? "" : "inline-block p-12"}`}> 
+                        <div class= "w-full h-full text-center bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 rounded border-4 border-blue-700"> 
 
                             <div class="pb-5"> 
                                 <h1>{course.name}</h1> 

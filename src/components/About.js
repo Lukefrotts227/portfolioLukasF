@@ -1,5 +1,6 @@
 import React, { useState,  useEffect } from "react";
-import Temp from '../logo192.png'; 
+import { aboutMe } from '../data'; 
+import Temp from '../mario.png'; 
 
 export default function About(){
     const [isVisible, setIsVisible] = useState(false); 
@@ -43,9 +44,7 @@ export default function About(){
             <content> 
                 <div class="text-center px-5">
                     <p class="text-gray-50 small-font-m">
-                        My name is Lukas and I am a sophomore Computer Science major at Montclair State University.
-                        I love coding in my free time and am always looking to create new projects.
-                        To hone my skills, I have and will continue to attend hackathons.
+                        {aboutMe}
                     </p> 
                 </div> 
             </content>    
@@ -60,13 +59,21 @@ export default function About(){
                 </div> 
             </header>
 
-            <content> 
-                <div class="flex flex-wrap">
+            <content class ="flex"> 
+                <div class="inline-block pl-20">
                     <p class="text-gray-50 small-font-d">
-                        My name is Lukas and I am a sophomore Computer Science major at Montclair State University.
-                        I love coding in my free time and am always looking to create new projects.
-                        To hone my skills, I have and will continue to attend hackathons.
+                        {aboutMe}
                     </p>  
+                </div>
+                <div class = "inline-block px-28"> 
+                    <div>
+                        <img
+                        src={Temp}
+                        alt="Logo"
+                        class="w-80 h-60 object-center rounded-full"
+                        />
+                    </div>
+
                 </div>
             </content>
         </div>
@@ -75,16 +82,24 @@ export default function About(){
 
 
       {/* Additional Content */}
+      { isMobile ? (
     
        <div class={`container mx-auto flex justify-center`}>
             <div>
                 <img
                 src={Temp}
                 alt="Logo"
-                class="py-4 w-44 h-44f object-center rounded-full"
+                class="py-4 w-22 h-44 object-center rounded-full"
                 />
             </div>
         </div>
+      ):
+      (
+        <div>
+        </div>
+      )
+    }   
 
     </section>
-  );}
+  );
+}

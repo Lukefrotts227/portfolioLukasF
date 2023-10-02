@@ -1,3 +1,8 @@
+export const aboutMe = "My name is Lukas and I am a sophomore Computer Science major at Montclair State University."
+ + " I love coding in my free time and am always looking to create new projects." 
++ " To hone my skills, I have and will continue to attend hackathons."
+
+
 export const projects = [
     {
         name: "Song Assosation Game", 
@@ -46,14 +51,29 @@ export const miniProjects = [
 ]
 
 export const skills = [
-    "Python",
-    "Java", 
-    "C/C++",
-    "MongoDB",
-    "React",
-    "Html/Css/Js",
-    "Express",
-    "Flask",
+    {name: "Python",
+    },
+
+    {name: "Java",
+    }, 
+
+    {name: "C/C++",
+    },
+
+    {name: "MongoDB",
+    },
+
+    {name: "React",
+    },
+
+    {name: "Html/Css/Js",
+    },
+
+    {name: "Express",
+    },
+
+    {name: "Flask", 
+    },
 ]
 
 export const courses = [
@@ -70,7 +90,8 @@ export const courses = [
 
     {
         name: "Introduction to python programming", 
-        description: "In this course we covered the basics of python programming."
+        description: "In this course we covered the basics of python programming. This includes the basics of control flow"
+        + ", loops and functions."
     },
 ]
 
