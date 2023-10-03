@@ -6,13 +6,13 @@ import Mario from '../mario.png';
 
 export default function Projects(){
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1200 ) 
     
 
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
+            setIsMobile(window.innerWidth <= 1200);
         }; 
 
         window.addEventListener('resize', handleResize); 
@@ -36,13 +36,13 @@ export default function Projects(){
                         <div class={`${isMobile ? "" : "flex-wrap"}`}> 
                             {projects.map((project) => (
 
-                                <div class={`pb-6 ${isMobile ? "" : " w-2/5 inline-block p-5 "}`}>
+                                <div class={`pb-6 ${isMobile ? "w-full h-auto" : " w-2/5 inline-block p-5 "}`}>
                                     <div class= "text-center project-font-m pb-2"> 
                                         <h3>{project.name}</h3>
                                         <h4>{project.mini_description}</h4> 
                                     </div>
 
-                                    <div class={`relative flex justify-center items-center h-80`}> 
+                                    <div class={`relative flex justify-center items-center h-100`}> 
                                         <div class={`absolute inset-0`}>
                                             
                                             <img
@@ -102,9 +102,10 @@ export default function Projects(){
                         <div class="pb-5">
                             <h4>Here are some of my Smaller Projects</h4>
                         </div> 
+                        <div class ={`flex flex-wrap justify-center items-center ${isMobile ? "" : "px-36"}`}>
                         {
                             miniProjects.map((miniProject) => (
-                                <div class="p-3 sm:w-1/2 w-full h-full text-center bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 rounded border-4 border-blue-700"> 
+                                <div class={`p-3  ${isMobile ? "" : "inline-block small-font-d px-12"} sm:w-1/2 w-full h-full text-center bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 rounded border-4 border-blue-700`}> 
                                     <div class= "pb-4">
                                         <h1>{miniProject.name}</h1> 
                                     </div>
@@ -143,6 +144,7 @@ export default function Projects(){
                                 </div> 
                             ))
                         }
+                        </div>
 
                     </div>
 

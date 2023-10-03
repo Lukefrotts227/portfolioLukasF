@@ -6,7 +6,7 @@ import Linkedin from '../link.png';
 
 
 export default function Touch(){
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 900); 
     const [currentSlide, setCurrentSlide] = useState(999); 
     const [previousSlide, setPreviousSlide] = useState(-1); 
 
@@ -29,7 +29,7 @@ export default function Touch(){
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
+            setIsMobile(window.innerWidth <= 900);
         }; 
 
         window.addEventListener('resize', handleResize); 

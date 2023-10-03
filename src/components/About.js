@@ -4,7 +4,7 @@ import Temp from '../mario.png';
 
 export default function About(){
     const [isVisible, setIsVisible] = useState(false); 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 900); 
 
 
    
@@ -17,7 +17,7 @@ export default function About(){
 
       useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
+            setIsMobile(window.innerWidth <= 900);
         }; 
 
         window.addEventListener('resize', handleResize); 
