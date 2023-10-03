@@ -11,7 +11,7 @@ export const projects = [
         + "It then detects if the word was sang.",
         how: "Kivy, Speech Recognition, Pyaudio",
         future: "Improve speech reconginiton, add additional functionality and add song detection",
-        image: "../song-association.png",
+        image: "./song-association.png",
         where: "https://devpost.com/software/song-association-game",
         
         
@@ -23,7 +23,7 @@ export const projects = [
         how: "React, MongoDB Atlas, Flask",
         future: "Improve the carbon emssion calculation algorithim, improve the user interface, add more functionality "
         + "and add more social aspects",
-        image: "../climate-collab.jpeg",
+        image: "./climate-collab.jpg",
         where: "https://devpost.com/software/carbon-footprint-collab",
     }, 
 
@@ -34,7 +34,7 @@ export const projects = [
         how: "React, Fastapi, MongoDB atlas, OpenAI",
         future: "Imporve user interface, add more traditional social media features, include an sql database, transistion to the "
         + "django framework",
-        image: "../community-organizer.jpeg",
+        image: "./community-organizer.jpg",
         where: "https://devpost.com/software/community-organizer", 
     },
 ];

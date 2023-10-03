@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'; 
 
-import Github from '../github-mark-white.png'; 
-import Devpost from '../devpost.png'; 
-import Linkedin from '../link.png'; 
+const Github = './github-mark-white.png'; 
+const Devpost = './devpost.png'; 
+const Linkedin = './link.png'; 
 
 
 export default function Touch(){

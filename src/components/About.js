@@ -1,6 +1,6 @@
 import React, { useState,  useEffect } from "react";
 import { aboutMe } from '../data'; 
-import Temp from '../mario.png'; 
+const Temp = './mario.png'; 
 
 export default function About(){
     const [isVisible, setIsVisible] = useState(false); 

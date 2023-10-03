@@ -1,5 +1,5 @@
 import React, { useState,  useEffect } from "react";
-import Temp from '../myRand.png'; 
+const Temp = './myRand.png'; 
 //import { PersonalImages } from '../data';
 
 

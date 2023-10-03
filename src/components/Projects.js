@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import { projects, miniProjects } from '../data'; 
 
-import Mario from '../mario.png'; 
 
 export default function Projects(){
 
@@ -54,7 +53,7 @@ export default function Projects(){
                                             <div class={`absolute inset-0`}>
                                                 
                                                 <img
-                                                src={Mario}
+                                                src={project.image}
                                                 alt ={`image`}
                                                 class ="w-full h-full object-cover object-center"
                                                 />
