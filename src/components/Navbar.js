@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react'; 
+import { Link } from "react-scroll";
 
 export default function Navbar(){
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 900); 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 700); 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [duration, setDuration] = useState(333); 
     
 
 
     
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 900);
+            setIsMobile(window.innerWidth <= 700);
         }; 
 
         window.addEventListener('resize', handleResize); 
@@ -37,29 +39,62 @@ export default function Navbar(){
                         
                         <div class={`relative text-center mx-auto md:hidden ${mobileMenuOpen ? 'mobile-dropdown-enter' : 'mobile-dropdown-exit'} `}>
 
-                                <div class={`text-center py-4 ${mobileMenuOpen ? 'mobile-dropdown-text-enter' : 'mobile-dropdown-text-exit'}`}>                      
-                                    <a href="#About" class="block text-white hover:text-gray-300 my-2">
-                                        About
+                                <div class={`text-center py-4 ${mobileMenuOpen ? 'mobile-dropdown-text-enter' : 'mobile-dropdown-text-exit'}`}>    
+                  
+                                    <a class="block text-white hover:text-gray-300 my-2">
+                                        <Link
+                                        to="about"
+                                        smooth={true}
+                                        duration={duration}
+                                        >
+                                            About
+                                        </Link>
                                     </a>
-                                    <a href="#Touch" class="block text-white hover:text-gray-300 my-2">
-                                        Get in Touch
+                                    <a class="block text-white hover:text-gray-300 my-2">
+                                        <Link
+                                        to="touch"
+                                        smooth={true}
+                                        duration={duration}> 
+                                            Get in Touch
+                                        </Link>
                                     </a>
-                                    <a href="#Projects" class="block text-white hover:text-gray-300 my-2">
-                                        Projects
+                                    <a class="block text-white hover:text-gray-300 my-2">
+                                        <Link
+                                        to="projects"
+                                        smooth={true}
+                                        duration={duration}
+                                        >
+                                            Projects
+                                        </Link>
                                     </a>
-                                    <a href="#Skills" class="block text-white hover:text-gray-300 my-2">
-                                        Skills
+                                    <a class="block text-white hover:text-gray-300 my-2">
+                                        <Link
+                                            to="skills"
+                                            smooth={true}
+                                            duration={duration}
+                                            >
+                                                Skills
+                                        </Link>
                                     </a>
-                                    <a href="#Academics" class="block text-white hover:text-gray-300 my-2">
-                                        Academics
+                                    <a class="block text-white hover:text-gray-300 my-2">
+                                        <Link
+                                            to="academics"
+                                            smooth={true}
+                                            duration={duration}
+                                            >
+                                                Academics
+                                        </Link>
                                     </a>
-                                    <a href="#Next" class="block text-white hover:text-gray-300 my-2">
-                                        Whats Next?
+                                    <a class="block text-white hover:text-gray-300 my-2">
+                                        <Link
+                                            to="next"
+                                            smooth={true}
+                                            duration={duration}
+                                            >
+                                                Whats Next?
+                                        </Link>
                                     </a>
 
-                                    <a href="#Resume" class="block text-white hover:text-gray-300 my-2"> 
-                                        Resume
-                                    </a> 
                                 </div> 
                             
                         </div>
@@ -68,13 +103,58 @@ export default function Navbar(){
                     <div class="container text-center mx-auto py-4">
                         <div class="flex justify-center items-center mx-auto">
                             <div class="md:flex space-x-8 text-xl"> 
-                                <a href="#About" class="text-white hover:text-gray-300">About</a>
-                                <a href="#InTouch" class="text-white hover:text-gray-300">Get in Touch</a>
-                                <a href="#Projects" class="text-white hover:text-gray-300">Projects</a>
-                                <a href="#Skills" class="text-white hover:text-gray-300">Skills</a>
-                                <a href="#Academics" class="text-white hover:text-gray-300">Academics</a>
-                                <a href="#Next" class ="text-white hover:text-gray-300">Whats Next?</a>
-                                <a href="#Resume" class="text-white hover:text-gray-300">Resume</a>
+                                <a class="text-white hover:text-gray-300">
+                                    <Link
+                                    to="about"
+                                    smooth={true}
+                                    duration={duration}
+                                    >
+                                        About
+                                    </Link>
+                                </a>
+                                <a class="text-white hover:text-gray-300">
+                                    <Link
+                                    to="touch"
+                                    smooth={true}
+                                    duration={duration}>
+                                        Get in Touch
+                                    </Link>
+                                </a>
+                                <a class="text-white hover:text-gray-300">
+                                    <Link
+                                    to="projects"
+                                    smooth="true"
+                                    duration={duration}
+                                    >
+                                        Projects
+                                    </Link>
+                                    </a>
+                                <a class="text-white hover:text-gray-300">
+                                    <Link
+                                        to="skills"
+                                        smooth="true"
+                                        duration = {duration}
+                                        >
+                                            Skills
+                                        </Link>
+                                 </a>
+                                <a class="text-white hover:text-gray-300">
+                                    <Link
+                                        to="academics"
+                                        smooth="true"
+                                        duration = {duration}
+                                        >
+                                        Academics
+                                    </Link>
+                                </a>
+                                <a class ="text-white hover:text-gray-300">
+                                <Link
+                                    to="next"
+                                    smooth="true"
+                                    duration = {duration}>
+                                        Next
+                                    </Link>
+                                </a>
                             </div> 
                         </div> 
                     </div>

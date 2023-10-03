@@ -6,7 +6,7 @@ import Temp from '../myRand.png';
 
 export default function Intro(){
     const [isVisible, setIsVisible] = useState(false); 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 900); 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 850); 
 
     
     useEffect(() => {
@@ -19,7 +19,7 @@ export default function Intro(){
 
       useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 900);
+            setIsMobile(window.innerWidth <= 850);
         }; 
 
         window.addEventListener('resize', handleResize); 

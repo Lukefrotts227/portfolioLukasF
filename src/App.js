@@ -14,7 +14,7 @@ export default function App() {
 
 
   return (
-    <main class="cursor-default h-full text-gray-50 bg-gray-800"> 
+    <main class="cursor-default h-full text-gray-50 bg-gray-800 py-24"> 
       <Navbar/>
       <Intro/>
       <About/>

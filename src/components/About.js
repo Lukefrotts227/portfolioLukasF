@@ -4,7 +4,7 @@ import Temp from '../mario.png';
 
 export default function About(){
     const [isVisible, setIsVisible] = useState(false); 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 900); 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 850); 
 
 
    
@@ -17,7 +17,7 @@ export default function About(){
 
       useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 900);
+            setIsMobile(window.innerWidth <= 850);
         }; 
 
         window.addEventListener('resize', handleResize); 
@@ -32,7 +32,7 @@ export default function About(){
 
     
   return (
-    <section class={`flex flex-col ${isVisible ? "fadeInLeft" : ""}`}>
+    <section id="about" class={`pt-8 flex flex-col ${isVisible ? "fadeInLeft" : ""}`}>
       
         {isMobile? (
         <div>

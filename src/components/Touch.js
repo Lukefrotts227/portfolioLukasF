@@ -6,7 +6,7 @@ import Linkedin from '../link.png';
 
 
 export default function Touch(){
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 900); 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 850); 
     const [currentSlide, setCurrentSlide] = useState(999); 
     const [previousSlide, setPreviousSlide] = useState(-1); 
 
@@ -29,7 +29,7 @@ export default function Touch(){
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 900);
+            setIsMobile(window.innerWidth <= 850);
         }; 
 
         window.addEventListener('resize', handleResize); 
@@ -42,7 +42,7 @@ export default function Touch(){
 
 
     return(
-        <section>
+        <section id="touch" class = "pt-8">
             {isMobile ?  (
 
                 <div class="items-center"> 
@@ -156,6 +156,13 @@ export default function Touch(){
                         <h5>My main email</h5> <h5>ljfrotton@gmail.com</h5>
                         <br/> 
                         <h5>My school email</h5> <h5>frottonl1@montclair.edu</h5>
+                        
+                    </div>
+                    <div> 
+                        <h1>Resume</h1> 
+                    </div>
+                    <div>
+
                     </div>
 
 
@@ -164,9 +171,9 @@ export default function Touch(){
             )
             :
             (
-                <div>
-                    <div class = "flex pb-12"> 
-                        <div class="inline-block title-font-d pl-16 pt-12 pr-20"> 
+                <div class = "p-5">
+                    <div class = "flex pb-12 border-4 border-blue-900"> 
+                        <div class="inline-block title-font-d pl-16 pt-12 pr-20 big-title-font-d"> 
                             <h1>Check me out</h1>
                         </div>
 
@@ -186,7 +193,7 @@ export default function Touch(){
                                     </div>
                                 </div> 
 
-                                <div class ="items-center text-center">
+                                <div class ="items-center text-center pt-6">
                                     <div class={`${currentSlide % SlideCount === 1 ? "block" : "hidden"}`}> 
                                         <h1 class="pb-5">My Devpost</h1>
                                         <div class="flex justify-center items-center rounded-full">
@@ -269,7 +276,16 @@ export default function Touch(){
                         <div class = "inline-block pt-12 pl-11"> 
                             <h2>My main email: ljfrotton@gmail.com</h2> 
                             <h2>My school email: frottonl1@montclair.edu</h2>
+                            <div> 
+                                <h1> 
+                                    Check out my Resume
+                                </h1>
+                            </div>
+                            <div> 
+
+                            </div>
                         </div>
+                        
                         
 
                     </div>           

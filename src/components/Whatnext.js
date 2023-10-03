@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 
 export default function Whatnext() {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 900); 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 850); 
     
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 900);
+            setIsMobile(window.innerWidth <= 850);
         }; 
 
         window.addEventListener('resize', handleResize); 
@@ -18,7 +18,7 @@ export default function Whatnext() {
     }, []); 
 
     return(
-        <div class="text-center"> 
+        <div id="next" class="text-center pt-8"> 
             Whats Next
         </div> 
     ); 

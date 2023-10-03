@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { skills } from '../data'; 
 
 export default function Skills(){
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 900); 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 850); 
     
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 900);
+            setIsMobile(window.innerWidth <= 850);
         }; 
 
         window.addEventListener('resize', handleResize); 
@@ -17,7 +17,11 @@ export default function Skills(){
     }, []); 
 
     return(
-        <div>
+        <div id="skills" class="pt-8">
+            <div class={`${isMobile ? "title-font-m" : "big-title-font-d"} text-center pb-7`}>   
+                <h1>My skills</h1> 
+
+            </div>
             <div class="flex flex-wrap p-6">
                 {skills.map((skill) => (
 
@@ -30,7 +34,7 @@ export default function Skills(){
                         </div>
 
                         <div class={`relative z-8 bg-black w-full h-full opacity-0 hover:opacity-100`}> 
-                            more data
+                            {skill.description}
                         </div>
                     </div>
                 </div>

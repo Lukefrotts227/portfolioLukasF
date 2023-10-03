@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+--opacity: 1;
+rgba(29, 78, 216, var(--opacity));
+}
+*/
+
 @keyframes left-swipe { 
 
 }
@@ -165,7 +171,9 @@
     font-size: calc(1.88vh + 1.88vw); 
 }
 
-
+.big-title-font-d{
+    font-size: calc(3.98vh + 3.98vw); 
+}
 
 
 

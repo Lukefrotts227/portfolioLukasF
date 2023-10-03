@@ -52,27 +52,35 @@ export const miniProjects = [
 
 export const skills = [
     {name: "Python",
+    description: "The language I have the most expereince in, I have done coursework and large projects with it",
     },
 
     {name: "Java",
+    description: "The majority of my coursework historically has been in this programming language",
     }, 
 
     {name: "C/C++",
+    description: "I have recently learned these check out my github to see my progress",
     },
 
     {name: "MongoDB",
+    description: "I have used MongoDB as my database for multiple projects",
     },
 
     {name: "React",
+    description: "I have used this framework for multiple user interface including this user interface",
     },
 
     {name: "Html/Css/Js",
+    description: "The basics of web development on the frontend I continue to better my skills with these",
     },
 
     {name: "Express",
+    description: "I have used this to create backends for web applications",
     },
 
     {name: "Flask", 
+    description: "I have used this frameowrk to code backend for web applications",
     },
 ]
 
