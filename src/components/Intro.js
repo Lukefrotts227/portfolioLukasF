@@ -1,5 +1,5 @@
 import React, { useState,  useEffect } from "react";
-const Temp = './myRand.png'; 
+const Me = './picofme1.jpg'; 
 //import { PersonalImages } from '../data';
 
 
@@ -37,11 +37,11 @@ export default function Intro(){
         {isMobile ? (
             <header class="flex items-center jusitfy-center">
                 <div class={`container mx-auto py-3 mt-10 text-center bg-gray-800 ${isVisible ? "fadeInRight" : ""}`}> 
-                    <div class="mx-auto flex justify-center pb-6"> 
+                    <div class="mx-auto flex justify-center p-12"> 
                                 <img
-                                src={Temp}
+                                src={Me}
                                 alt="Logo"
-                                class="w-20 h-20 object-center rounded-full"
+                                class="w-64 h-40 object-center rounded-full"
                                 /> 
                             </div>
                     <div>
@@ -58,7 +58,7 @@ export default function Intro(){
                 <div class={`flex container mx-auto py-6 mt-16 text-center ${isVisible ? "fadeInRight" : ""}`}> 
                     <div class="inline-block mx-auto"> 
                             <img
-                            src={Temp}
+                            src={Me}
                             alt="Logo"
                             class="w-66 h-66 object-center rounded-full mr-4"
                             /> 

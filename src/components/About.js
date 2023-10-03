@@ -1,6 +1,6 @@
 import React, { useState,  useEffect } from "react";
 import { aboutMe } from '../data'; 
-const Temp = './mario.png'; 
+const Me = 'picofme2.jpg'; 
 
 export default function About(){
     const [isVisible, setIsVisible] = useState(false); 
@@ -68,9 +68,9 @@ export default function About(){
                 <div class = "inline-block px-28"> 
                     <div>
                         <img
-                        src={Temp}
+                        src={Me}
                         alt="Logo"
-                        class="w-80 h-60 object-center rounded-full"
+                        class="w-64 h-40 object-center rounded-full"
                         />
                     </div>
 
@@ -87,7 +87,7 @@ export default function About(){
        <div class={`container mx-auto flex justify-center`}>
             <div>
                 <img
-                src={Temp}
+                src={Me}
                 alt="Logo"
                 class="py-4 w-22 h-44 object-center rounded-full"
                 />
