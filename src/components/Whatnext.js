@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
+import { next_description  } from '../data';
 
 
 export default function Whatnext() {
@@ -18,8 +19,18 @@ export default function Whatnext() {
     }, []); 
 
     return(
-        <div id="next" class="text-center pt-8"> 
-            Whats Next
+        <div id="next" class="py-8"> 
+        
+            <div class ={`text-center big-title-font-d`}>
+                <h1>Whats Next?</h1>
+            </div>
+
+            <div class = {`text-cetner small-font-d`}> 
+                <p>
+                    {next_description}
+                </p>
+            </div>
+
         </div> 
     ); 
 

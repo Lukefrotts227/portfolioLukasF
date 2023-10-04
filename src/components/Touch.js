@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 const Github = './github-mark-white.png'; 
 const Devpost = './devpost.png'; 
 const Linkedin = './link.png'; 
+const Resume = './resumeicon.jpg'; 
+const ResumeLink = './myResume.pdf'; 
 
 
 export default function Touch(){
@@ -159,11 +161,22 @@ export default function Touch(){
                         
                     </div>
                     <div> 
-                        <h1>Resume</h1> 
+                        <div class = "text-center"> 
+                            <h1>Resume</h1>
+                        </div> 
+                        <div> 
+                            <a href={ResumeLink} target="_blank" rel="noopener noreferrer">
+                                <div class = "flex items-center pt-5 justify-center rounded-full"> 
+                                    <img
+                                    src={Resume}
+                                    class="h-28 2-28"
+                                    />
+                                    
+                                </div> 
+                            </a>
+                        </div> 
                     </div>
-                    <div>
-
-                    </div>
+                   
 
 
 
@@ -273,17 +286,27 @@ export default function Touch(){
 
                         </div>
 
-                        <div class = "inline-block pt-12 pl-11"> 
-                            <h2>My main email: ljfrotton@gmail.com</h2> 
-                            <h2>My school email: frottonl1@montclair.edu</h2>
+                        <div class = "inline-block pt-12 pl-11 text-center"> 
+                            <h2 class = "pb-4">My main email: ljfrotton@gmail.com</h2> 
+                            <h2 class = "pb-5">My school email: frottonl1@montclair.edu</h2>
                             <div> 
-                                <h1> 
-                                    Check out my Resume
-                                </h1>
+                                <div> 
+                                    <h1> 
+                                        Check out my Resume
+                                    </h1>
+                                </div> 
+                                <div class = "flex items-center justify-center p-6"> 
+                                    <a href={ResumeLink} target="_blank" rel="noopener noreferrer"> 
+                                       <div class="rounded-full"> 
+                                            <img
+                                            src={Resume}
+                                            class="h-28 w-28"
+                                            />
+                                        </div>  
+                                    </a>
+                                </div> 
                             </div>
-                            <div> 
-
-                            </div>
+                            
                         </div>
                         
                         
