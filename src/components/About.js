@@ -36,7 +36,7 @@ export default function About(){
       
         {isMobile? (
         <div>
-            <header class="bg-gray-800 py-4 flex items-center justify-center">
+            <header class="bg-gray-800 py-3 flex items-center justify-center">
                 <div class="container mx-auto text-center">
                     <h1 class="text-gray-50 font-semibold title-font-m">About Me</h1>
                 </div>
@@ -70,7 +70,7 @@ export default function About(){
                         <img
                         src={Me}
                         alt="Logo"
-                        class="w-64 h-40 object-center rounded-full"
+                        class="w-64 h-56 object-center rounded-full"
                         />
                     </div>
 

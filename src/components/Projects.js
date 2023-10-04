@@ -5,13 +5,13 @@ import { projects, miniProjects } from '../data';
 
 export default function Projects(){
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 850 ) 
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 955 ) 
     const [isWide, setIsWide] = useState(window.innerWidth >= 599)
 
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 850);
+            setIsMobile(window.innerWidth <= 955);
             setIsWide(window.innerWidth >= 599)
         }; 
 
