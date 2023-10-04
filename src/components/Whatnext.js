@@ -20,12 +20,12 @@ export default function Whatnext() {
 
     return(
         <div id="next" class="py-8"> 
-        
+
             <div class ={`text-center big-title-font-d`}>
                 <h1>Whats Next?</h1>
             </div>
 
-            <div class = {`text-cetner small-font-d`}> 
+            <div class = {`text-center ${isMobile ? "med-font-m p-3" : "small-font-d p-12"}`}> 
                 <p>
                     {next_description}
                 </p>

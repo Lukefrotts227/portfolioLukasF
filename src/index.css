@@ -8,6 +8,23 @@ rgba(29, 78, 216, var(--opacity));
 }
 */
 
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(116, 115, 126),
+        0 0 80px rgb(229, 229, 230),
+        0 0 90px rgb(225, 224, 234),
+        0 0 100px rgb(205, 210, 215),
+        0 0 150px rgb(195, 196, 202);
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+  }
+
 @keyframes left-swipe { 
 
 }
@@ -207,4 +224,18 @@ rgba(29, 78, 216, var(--opacity));
 
 .quite-small-font-m {
     font-size: calc(1.355vh + 1.355vh); 
+}
+
+
+.my-shadow-1{
+    text-shadow:rgba(31, 36, 193, 0.867); 
+}
+
+.inf-flicker{
+    animation: flicker 1.25s infinite alternate; 
+}
+
+.quick-flicker{
+    animation: flicker 1.5s ease-in-out; 
+    
 }

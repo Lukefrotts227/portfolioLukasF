@@ -44,7 +44,7 @@ export default function Intro(){
                                 class="w-64 h-40 object-center rounded-full"
                                 /> 
                             </div>
-                    <div>
+                    <div class = "quick-flicker">
                         <h1 class="text-gray-50 med-font-u">Hello, My name is Lukas</h1>
                         <h1 class="text-gray-50 med-font-u">Welcome to my Portfolio</h1> 
                     </div> 
@@ -63,7 +63,7 @@ export default function Intro(){
                             class="w-66 h-66 object-center rounded-full mr-4"
                             /> 
                         </div>
-                    <div class="inline-block mx-auto pt-12">
+                    <div class="inline-block mx-auto pt-12 quick-flicker">
                         <h1 class="text-gray-50 med-font-u">Hello, My name is Lukas</h1>
                         <h1 class="text-gray-50 med-font-u">Welcome to my Portfolio</h1> 
                     </div> 

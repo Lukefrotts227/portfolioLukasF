@@ -31,7 +31,7 @@ export default function Navbar(){
 
     return(
         <nav class={`fixed top-0 left-0 w-full ${
-             'bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900'
+             'bg-gradient-to-r from-gray-600 via-blue-800 to-gray-900'
           }`}
           style={{ zIndex: isMobile ? 2 : 1 }}>   
             
