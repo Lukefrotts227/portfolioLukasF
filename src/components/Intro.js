@@ -36,7 +36,7 @@ export default function Intro(){
         <div>
         {isMobile ? (
             <header class="flex items-center jusitfy-center">
-                <div class={`container mx-auto py-3 mt-10 text-center bg-gray-800 ${isVisible ? "fadeInRight" : ""}`}> 
+                <div class={`container mx-auto py-3 mt-10 text-center ${isVisible ? "fadeInRight" : ""}`}> 
                     <div class="mx-auto flex justify-center p-12"> 
                                 <img
                                 src={Me}

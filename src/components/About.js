@@ -70,7 +70,7 @@ export default function About(){
                         <img
                         src={Me}
                         alt="Logo"
-                        class="w-72 h-36object-center rounded-full"
+                        class=" w-full h-full object-center rounded-full"
                         />
                     </div>
 

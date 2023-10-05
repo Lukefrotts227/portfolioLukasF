@@ -100,7 +100,7 @@ export default function Touch(){
                                     </div> 
                                 </div>
 
-                                <div class="flex justify-center items-center mx-auto text-center small-font-m pb-8 bg-gray-800">
+                                <div class="flex justify-center items-center mx-auto text-center small-font-m pb-8">
                                     <div onClick={toggleSlideLeft} class="inline-block pr-4">
                                         <button class="">
                                             <svg
@@ -109,7 +109,7 @@ export default function Touch(){
                                             height="50"
                                             viewBox="0 0 24 24"
                                             fill="none"
-                                            stroke="black"
+                                            stroke="white"
                                             stroke-width="2"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
@@ -131,7 +131,7 @@ export default function Touch(){
                                             height="50"
                                             viewBox="0 0 24 24"
                                             fill="none"
-                                            stroke="black"
+                                            stroke="white"
                                             stroke-width="2"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
@@ -243,7 +243,7 @@ export default function Touch(){
                                             height="50"
                                             viewBox="0 0 24 24"
                                             fill="none"
-                                            stroke="black"
+                                            stroke="white"
                                             stroke-width="2"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
@@ -265,7 +265,7 @@ export default function Touch(){
                                             height="50"
                                             viewBox="0 0 24 24"
                                             fill="none"
-                                            stroke="black"
+                                            stroke="white"
                                             stroke-width="2"
                                             stroke-linecap="round"
                                             stroke-linejoin="round"
