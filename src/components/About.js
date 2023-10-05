@@ -36,7 +36,7 @@ export default function About(){
       
         {isMobile? (
         <div>
-            <header class="bg-gray-800 py-3 flex items-center justify-center">
+            <header class="py-3 flex items-center justify-center">
                 <div class="container mx-auto text-center">
                     <h1 class="text-gray-50 font-semibold title-font-m">About Me</h1>
                 </div>
@@ -53,7 +53,7 @@ export default function About(){
         ) : 
         (
         <div> 
-            <header class="bg-gray-800 pb-12 pt-12 flex items-center justify-center">
+            <header class="pb-12 pt-12 flex items-center justify-center">
                 <div class="container mx-auto text-center"> 
                     <h1 class="text-gray-50 font-semibold title-font-d">About Me</h1>
                 </div> 

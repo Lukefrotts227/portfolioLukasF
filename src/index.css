@@ -228,7 +228,11 @@ rgba(29, 78, 216, var(--opacity));
 
 
 .my-shadow-1{
-    text-shadow:rgba(31, 36, 193, 0.867); 
+    text-shadow: 
+    0 0 12px rgba(31, 36, 193, 0.867), 
+    0 0 22px rgba(35, 54, 188, 0.888), 
+    0 0 26px rgba(49, 133, 196, 0.777),
+    0 0 44px rgba(200, 200, 200, .888); 
 }
 
 .inf-flicker{
@@ -236,6 +240,5 @@ rgba(29, 78, 216, var(--opacity));
 }
 
 .quick-flicker{
-    animation: flicker 1.5s ease-in-out; 
-    
+    animation: flicker 3.45s ease-in-out;     
 }

@@ -34,7 +34,9 @@ export default function Skills(){
                         </div>
 
                         <div class={`relative z-8 bg-black w-full h-full opacity-0 hover:opacity-100`}> 
-                            {skill.description}
+                            <div class = "pt-8 flex items-center justify-center">
+                                {skill.description}
+                            </div>
                         </div>
                     </div>
                 </div>

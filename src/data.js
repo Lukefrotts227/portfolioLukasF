@@ -1,6 +1,7 @@
 export const aboutMe = "My name is Lukas and I am a sophomore Computer Science major at Montclair State University."
  + " I love coding in my free time and am always looking to create new projects." 
-+ " To hone my skills, I have and will continue to attend hackathons."
++ " To hone my skills, I have and will continue to attend hackathons. I love learning new technologies, frameworks, skills and languages."
++ " I am always willing to test out somehting new at a hackathon, or for my own pernsonal projects."
 
 
 export const projects = [
@@ -103,12 +104,23 @@ export const courses = [
     },
 ]
 
-export const next_description = "I will continue to work on this portfolio. Furthermore I will be attending multiple hackathons in the future"; 
+export const next_description = "I will continue to work on this portfolio. Furthermore, I will be attending multiple hackathons in the future " 
++ "including HackRU and HackHarvard"; 
 
 
 
 
-export const next =[
 
-] 
+export const learning = [
+    {
+        name: "rust",
+        description: "",
+    },
+
+    {
+        name: "SQL",
+        description: "",
+    },
+
+]
 
