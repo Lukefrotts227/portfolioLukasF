@@ -1,6 +1,6 @@
 import React, { useState,  useEffect } from "react";
 import { aboutMe } from '../data'; 
-const Me = 'picofme2.jpg'; 
+const Me = 'picofme4.jpg'; 
 
 export default function About(){
     const [isVisible, setIsVisible] = useState(false); 
@@ -84,12 +84,12 @@ export default function About(){
       {/* Additional Content */}
       { isMobile ? (
     
-       <div class={`container mx-auto flex justify-center`}>
+       <div class={`container mx-auto flex justify-center px-4`}>
             <div>
                 <img
                 src={Me}
                 alt="Logo"
-                class="py-4 w-22 h-44 object-center rounded-full"
+                class="py-4 w-64 h-72 object-center rounded-full"
                 />
             </div>
         </div>

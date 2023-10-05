@@ -1,5 +1,5 @@
 import React, { useState,  useEffect } from "react";
-const Me = './picofme1.jpg'; 
+const Me = './picofme3.jpg'; 
 //import { PersonalImages } from '../data';
 
 
@@ -41,7 +41,7 @@ export default function Intro(){
                                 <img
                                 src={Me}
                                 alt="Logo"
-                                class="w-64 h-40 object-center rounded-full"
+                                class="w-full h-full object-center rounded-full"
                                 /> 
                             </div>
                     <div class = "quick-flicker">
@@ -60,7 +60,7 @@ export default function Intro(){
                             <img
                             src={Me}
                             alt="Logo"
-                            class="w-66 h-66 object-center rounded-full mr-4"
+                            class="w-96 h-96 object-center rounded-full mr-4"
                             /> 
                         </div>
                     <div class="inline-block mx-auto pt-12 quick-flicker">
