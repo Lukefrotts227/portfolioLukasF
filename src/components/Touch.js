@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
+import Arrow from './svgs/Arrow';
 
 const Github = './github-mark-white.png'; 
 const Devpost = './devpost.png'; 
@@ -103,20 +104,7 @@ export default function Touch(){
                                 <div class="flex justify-center items-center mx-auto text-center small-font-m pb-8">
                                     <div onClick={toggleSlideLeft} class="inline-block pr-4">
                                         <button class="">
-                                            <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="50"
-                                            height="50"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            >
-                                                <line x1="19" y1="12" x2="5" y2="12" />
-                                                <polyline points="12 5 5 12 12 19" />
-                                            </svg>
+                                           <Arrow right={false} height={"50"} width={"50"} color={"white"} />
 
                                             
                                         </button>
@@ -125,22 +113,8 @@ export default function Touch(){
 
                                     <div onClick={toggleSlideRight} class ="inline-block pl-4">
                                         <button class="">
-                                            <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="50"
-                                            height="50"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            >
-                                                <line x1="5" y1="12" x2="19" y2="12" />
-                                                <polyline points="12 5 19 12 12 19" />
-                                            </svg>
-
-                                            
+                                            <Arrow right={true} height={"50"} width={"50"} color={"white"} />
+                                                
                                         </button>
 
                                     </div>
@@ -237,43 +211,15 @@ export default function Touch(){
                                 <div class="flex justify-center items-center mx-auto text-center small-font-m py-4">
                                     <div onClick={toggleSlideLeft} class="inline-block pr-4">
                                         <button class="">
-                                            <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="50"
-                                            height="50"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            >
-                                                <line x1="19" y1="12" x2="5" y2="12" />
-                                                <polyline points="12 5 5 12 12 19" />
-                                            </svg>
-
-                                            
+                                            <Arrow right={false} height={"50"} width={"50"} color={"white"} />
+       
                                         </button>
                                         
                                     </div>
 
                                     <div onClick={toggleSlideRight} class ="inline-block pl-4">
                                         <button class="">
-                                            <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="50"
-                                            height="50"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="white"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            >
-                                                <line x1="5" y1="12" x2="19" y2="12" />
-                                                <polyline points="12 5 19 12 12 19" />
-                                            </svg>
-
+                                            <Arrow right={true} height={"50"} width={"50"} color={"white"} />
                                             
                                         </button>
 

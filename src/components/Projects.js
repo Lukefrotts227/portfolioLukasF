@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'; 
-
+import Arrow from './svgs/Arrow';
 import { projects, miniProjects } from '../data'; 
 
 
@@ -72,20 +72,8 @@ export default function Projects(){
                                                         <p class ="pb-2">Check it out</p>
                                                         <a href={project.where} target="_blank" rel="noopener noreferrer">
                                                             <button class="">
-                                                                <svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                width="50"
-                                                                height="50"
-                                                                viewBox="0 0 24 24"
-                                                                fill="none"
-                                                                stroke="white"
-                                                                stroke-width="2"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                                >
-                                                                    <line x1="5" y1="12" x2="19" y2="12" />
-                                                                    <polyline points="12 5 19 12 12 19" />
-                                                                </svg>                                                    
+                                                                <Arrow right={true} height={"50"} width={"50"} color={"white"}/>
+                                                           
                                                             </button>
                                                         </a>
                                                     </div>
@@ -111,43 +99,33 @@ export default function Projects(){
                         <div class="pb-5">
                             <h4>Here are some of my Smaller Projects</h4>
                         </div> 
-                        <div class ={`flex flex-wrap justify-center items-center ${isMobile ? "" : "px-36"}`}>
+                        <div class ={`${isMobile ? "px-12" : "px-36 flex flex-wrap justify-center items-center"}`}>
                         {
                             miniProjects.map((miniProject) => (
-                                <div class={`p-3  ${isMobile ? "" : "inline-block small-font-d px-12"} sm:w-1/2 w-full h-full text-center bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 rounded border-4 border-blue-700`}> 
-                                    <div class= "pb-4">
-                                        <h1>{miniProject.name}</h1> 
-                                    </div>
+                                
+                                <div class={`p-4 h-full text-center ${isMobile ? "w-full" : "inline-block w-3/6"}`}> 
+                                    <div class={`text-center bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900  border-4 border-blue-700 ${isMobile ? "sm:px-28" : ""} `}>
+                                        <div class= {`pb-4 text-center project-font-m`}>
+                                            <h1>{miniProject.name}</h1> 
+                                        </div>
 
-                                    <div> 
-                                        <h2>Built with: {miniProject.how}</h2> 
-                                    </div>
-                                    
-                                    <div> 
-                                        <p>{miniProject.description}</p> 
-                                    </div> 
+                                        <div class={`px-5 pb-3 text-center new-font-u`}>  
+                                            <h2>Built with: {miniProject.how}</h2> 
+                                        </div>
+                                        
+                                        <div class={`px-6 pb-2 text-center small-font-d`}> 
+                                            <p>{miniProject.description}</p> 
+                                        </div> 
 
-                                    <div> 
-                                        <h1>Check it out:</h1> 
-                                        <a href={miniProject.where} target="_blank" rel="noopener noreferrer">
-                                            <button class="">
-                                                <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="25"
-                                                height="25"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                stroke="white"
-                                                stroke-width="2"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                >
-                                                    <line x1="5" y1="12" x2="19" y2="12" />
-                                                    <polyline points="12 5 19 12 12 19" />
-                                                </svg>                                                    
-                                            </button>
-                                        </a>
+                                        <div class = "med-font-d"> 
+                                            <h1>Check it out:</h1> 
+                                            <a href={miniProject.where} target="_blank" rel="noopener noreferrer">
+                                                <button class="">
+                                                    <Arrow right={true} width={"50"} height={"50"} color={"white"} />                                                   
+                                                </button>
+                                            </a>
 
+                                        </div>
                                     </div>
 
                                 </div> 

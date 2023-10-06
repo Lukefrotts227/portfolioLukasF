@@ -141,6 +141,10 @@ rgba(29, 78, 216, var(--opacity));
 .med-font-u{
     font-size: calc(2.5vh + 2.5vw);
   }
+
+.new-font-u{
+    font-size: calc(1.55vh + 1.55vw)
+}
 .med-font-d{
     font-size: calc(2vh + 2vw); 
 }

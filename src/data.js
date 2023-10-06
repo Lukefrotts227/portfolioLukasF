@@ -43,11 +43,19 @@ export const projects = [
 
 export const miniProjects = [
     {
-        name: "C++ hashtable",
+        name: "C++ Hashtable",
         description: "A custom hashtable that supports resizing, custom data types and custom hashing functions",
         how: "C++",
         future: "Add greater functionlaity and find ways to make it more unique and applicable",
         where: "https://github.com/Lukefrotts227/learningC/tree/Main/datastructures/hashtablecpp"
+    },
+
+    {
+        name: "C++ Linked List", 
+        description: "A custom doubly linked list that supports all forms of insertion, search and deletion. It also includes a duplicate remover",
+        how: "C++",
+        future: "Add more functionality and use more operator classes",
+        where: "https://github.com/Lukefrotts227/learningC/tree/Main/datastructures/linkedlistcpp"
     },
 ]
 
