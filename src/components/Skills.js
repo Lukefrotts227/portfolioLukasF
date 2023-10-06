@@ -20,6 +20,9 @@ export default function Skills(){
         <div id="skills" class="pt-8">
             <div class={`${isMobile ? "title-font-m" : "big-title-font-d"} text-center pb-7`}>   
                 <h1>My skills</h1> 
+                <div class = "small-font-m"> 
+                    <h3>Hover to see more</h3>
+                </div>
 
             </div>
             <div class="flex flex-wrap p-6">
